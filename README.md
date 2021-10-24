@@ -1,2 +1,1 @@
-# react
-Learn and practice in react
+# Learn and practice in [React](https://reactjs.org/)

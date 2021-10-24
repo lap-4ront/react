@@ -1,9 +1,12 @@
 import React from 'react';
 import classes from './FilterableProductTable.module.css';
+import { ProductTable } from '../ProductTable/ProductTable';
 
-const FilterableProductTable = () => {
+const FilterableProductTable = ({ products }) => {
   return (
-    <h1 className={classes.title}>Hello!</h1>
+    <div className={classes.container}>
+      <ProductTable products={products} />
+    </div>
   );
 };
 

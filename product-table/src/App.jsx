@@ -5,7 +5,8 @@ import { FilterableProductTable } from "./components/FilterableProductTable/Filt
 function App() {
   return (
     <>
-      <FilterableProductTable />
+      <h1 className="title">My products</h1>
+      <FilterableProductTable products={PRODUCTS} />
     </>
   );
 }

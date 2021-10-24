@@ -1,9 +1,17 @@
 import React from 'react';
-import { classes } from './ProductRow.module.css';
+import './ProductRow.module.css';
 
-const ProductRow = () => {
+const ProductRow = ({ product }) => {
+
+  const name = product.stocked
+    ? product.name
+    : <span style={{ color: 'red' }}>{product.name}</span>;
+
   return (
-    <div>ProductRow</div>
+    <tr>
+      <td>{name}</td>
+      <td>{product.price}</td>
+    </tr>
   );
 };
 

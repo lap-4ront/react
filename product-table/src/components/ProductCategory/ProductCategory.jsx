@@ -1,9 +1,11 @@
 import React from 'react';
-import { classes } from './ProductCategory.module.css';
+import classes from './ProductCategory.module.css';
 
-const ProductCategory = () => {
+const ProductCategory = ({ category }) => {
   return (
-    <span>ProductCategory</span>
+    <tr colSpan="2" className={classes.categoryTitle}>
+      {category}
+    </tr>
   );
 };
 

@@ -1,3 +1,10 @@
+.animals {
+  background: aliceblue;
+  color: #444;
+  font-size: 1.4rem;
+  margin-block-end: 20px;
+}
+
 label:not(:last-of-type) {
   margin-inline-end: 15px;
 }

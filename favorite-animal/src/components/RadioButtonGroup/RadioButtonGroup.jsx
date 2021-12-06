@@ -2,7 +2,7 @@ import { RadioButton } from './../RadioButton/RadioButton';
 import styles from './RadioButtonGroup.module.css';
 import { ANIMALS } from './../../data/animals';
 
-const RadioButtonGroup = ({ onChange, favoriteAnimal }) => {
+const RadioButtonGroup = ({ onRadioChange, favoriteAnimal }) => {
 
   return (
     <fieldset className={styles.animals}>
@@ -14,7 +14,7 @@ const RadioButtonGroup = ({ onChange, favoriteAnimal }) => {
               key={id}
               label={animal}
               value={favoriteAnimal === animal}
-              onChange={onChange}
+              onChange={onRadioChange}
             />
           );
         })

@@ -6,14 +6,14 @@ import { FavoriteAnimal } from "./components/FavoriteAnimal/FavoriteAnimal";
 function App() {
   const [favoriteAnimal, setFavoriteAnimal] = useState("dog");
 
-  const handleChange = (event) => {
-    setFavoriteAnimal(event.target.nextSibling.nodeValue.toLowerCase());
+  const handleInputChange = (value) => {
+    setFavoriteAnimal(value);
   };
 
   return (
     <>
       <RadioButtonGroup
-        onChange={handleChange}
+        onRadioChange={handleInputChange}
         favoriteAnimal={favoriteAnimal}
       />
       <FavoriteAnimal animal={favoriteAnimal} />

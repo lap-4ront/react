@@ -19,21 +19,21 @@ const App = () => {
   };
 
   return (
-    <div className="App">
-      <div className="title">
+    <section className="App">
+      <header className="title">
         <h1>Zesty</h1>
         <h2>
           A Photo Gallery App <br /> by 4rontender
         </h2>
-      </div>
+      </header>
 
-      <div className="image-container">
-        <h3>
-          {currentImage} / {images.length}
-        </h3>
+      <figure className="image-container">
+        <figcaption>
+          {currentImage + 1} / {images.length}
+        </figcaption>
         <img alt="" src={images[currentImage]} onClick={handleClick} />
-      </div>
-    </div>
+      </figure>
+    </section>
   );
 };
 

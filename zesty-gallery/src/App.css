@@ -7,16 +7,10 @@ body {
   width: 100vw;
 }
 
-.App {
+section.App {
   display: flex;
   justify-content: space-between;
   height: 100vh;
-}
-
-.image-container {
-  background-color: #fff;
-  position: relative;
-  width: 50vw;
 }
 
 h1 {
@@ -41,8 +35,15 @@ img {
   width: 100%;
 }
 
-h3 {
-  bottom: 0;
+figure.image-container {
+  background-color: #fff;
+  margin: 0;
+  position: relative;
+  width: 50vw;
+}
+
+figcaption {
+  bottom: 10px;
   color: #fff;
   font-size: 2.5rem;
   font-weight: normal;

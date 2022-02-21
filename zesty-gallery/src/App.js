@@ -23,11 +23,14 @@ const App = () => {
       <div className="title">
         <h1>Zesty</h1>
         <h2>
-          A photogallery app <br /> by 4rontender
+          A Photo Gallery App <br /> by 4rontender
         </h2>
       </div>
 
       <div className="image-container">
+        <h3>
+          {currentImage} / {images.length}
+        </h3>
         <img alt="" src={images[currentImage]} onClick={handleClick} />
       </div>
     </div>

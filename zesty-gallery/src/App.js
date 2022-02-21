@@ -11,12 +11,17 @@ const images = [tabitha, ardy, elise, mahdi, osarugue];
 
 const App = () => {
   const [currentImage, setCurrentImage] = useState(0);
+  const [numLoaded, setNumLoaded] = useState(0);
 
   const handleClick = () => {
     const length = images.length - 1;
     setCurrentImage((currentImage) => {
       return currentImage < length ? currentImage + 1 : 0;
     });
+  };
+
+  const handleImageLoad = () => {
+    setNumLoaded((numLoaded) => numLoaded + 1);
   };
 
   return (
@@ -29,11 +34,24 @@ const App = () => {
       </header>
 
       <figure className="image-container">
-        <Loading />
+        {numLoaded < images.length && (
+          <Loading calculatedWidth={(numLoaded / images.length) * 100} />
+        )}
+
         <figcaption>
           {currentImage + 1} / {images.length}
         </figcaption>
-        <img alt="" src={images[currentImage]} onClick={handleClick} />
+        {images.map((imageURL, index) => (
+          <img
+            alt=""
+            key={imageURL}
+            src={imageURL}
+            onClick={handleClick}
+            onLoad={handleImageLoad}
+            // style={{ opacity: currentImage === index ? 1 : 0 }}
+            className={currentImage === index ? "display" : "hide"}
+          />
+        ))}
       </figure>
     </section>
   );

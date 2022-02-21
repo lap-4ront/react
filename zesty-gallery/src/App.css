@@ -31,8 +31,17 @@ h2 {
 img {
   height: 100%;
   object-fit: cover;
+  opacity: 0;
   position: absolute;
   width: 100%;
+}
+
+.display {
+  opacity: 1;
+}
+
+.hide {
+  opacity: 0;
 }
 
 figure.image-container {
@@ -78,9 +87,9 @@ progress {
 }
 
 progress[value]::-webkit-progress-bar {
-  background-color: #e8e8e8;
+  background: #e8e8e8;
 }
 
 progress[value]::-webkit-progress-value {
-  background-color: #294910;
+  background: #294910;
 }

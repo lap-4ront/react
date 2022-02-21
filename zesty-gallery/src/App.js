@@ -5,6 +5,7 @@ import ardy from "./assets/image2.jpg";
 import elise from "./assets/image3.jpg";
 import mahdi from "./assets/image4.jpg";
 import osarugue from "./assets/image5.jpg";
+import { Loading } from "./components/Loading";
 
 const images = [tabitha, ardy, elise, mahdi, osarugue];
 
@@ -28,6 +29,7 @@ const App = () => {
       </header>
 
       <figure className="image-container">
+        <Loading />
         <figcaption>
           {currentImage + 1} / {images.length}
         </figcaption>

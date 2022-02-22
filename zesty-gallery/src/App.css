@@ -7,7 +7,7 @@ body {
   width: 100vw;
 }
 
-section.App {
+.App {
   display: flex;
   justify-content: space-between;
   height: 100vh;
@@ -44,7 +44,7 @@ img {
   opacity: 0;
 }
 
-figure.image-container {
+.image-container {
   background-color: #fff;
   margin: 0;
   position: relative;
@@ -55,11 +55,10 @@ figcaption {
   bottom: 10px;
   color: #fff;
   font-size: 2.5rem;
-  font-weight: normal;
-  margin: 0 auto;
-  position: fixed;
+  padding: 20px 0;
+  position: absolute;
   text-align: center;
-  width: 50%;
+  width: 100%;
   z-index: 1;
 }
 
@@ -92,4 +91,39 @@ progress[value]::-webkit-progress-bar {
 
 progress[value]::-webkit-progress-value {
   background: #294910;
+}
+
+
+@media (max-width: 800px) {
+  .App {
+    flex-direction: column;
+  }
+
+  .image-container {
+    flex-grow: 1;
+    width: 100vw;
+  }
+
+  figcaption {
+    font-size: 1.875rem;
+  }
+
+  img {
+    object-fit: contain;
+  }
+
+  h1 {
+    font-size: 5rem;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+    position: relative;
+  }
+}
+
+@media (max-width: 450px) {
+  img {
+    object-fit: cover;
+  }
 }

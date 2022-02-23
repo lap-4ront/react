@@ -1,5 +1,21 @@
-# A simple application "What is your favorite animal?"
+# "What's your favorite animal?"
 
-### Use the `npm install` cli command in the root folder to install the dependencies.
+## Getting Started
 
-### Use the `npm start` cli command in the root folder to run the application in browser.
+Clone the repo:
+
+`git clone https://github.com/lap-4ront/react.git`
+
+Go to folder:
+
+`cd react/favorite-animal`
+
+Install dependencies:
+
+## `npm install`
+
+Launch the app:
+
+## `npm start`
+
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.

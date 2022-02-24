@@ -1,4 +1,13 @@
-import styled, { createGlobalStyle } from 'styled-components';
+import styled, { createGlobalStyle, css } from 'styled-components';
+
+export const Marginals = css`
+  box-sizing: border-box;
+  display: flex;
+  pointer-events: none;
+  position: fixed;
+  width: 100vw;
+  z-index: 1;
+`;
 
 export const GlobalStyles = createGlobalStyle`
   body {

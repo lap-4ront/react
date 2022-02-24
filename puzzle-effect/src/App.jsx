@@ -1,15 +1,14 @@
 import React from 'react';
-import { GlobalStyle } from './styles';
+import { GlobalStyles } from './styles';
+import { Header } from './components/Header';
 
 const App = () => {
-  const message = (nickname) => {
-    return `${nickname} is a frontend developer`;
-  };
   return (
-    <div className="App">
-      <GlobalStyle />
-      <h2>{message`4rontender`}</h2>
-    </div>);
+    <>
+      <GlobalStyles />
+      <Header />
+    </>
+  );
 };
 
 export default App;

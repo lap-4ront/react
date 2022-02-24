@@ -1,8 +1,8 @@
 import styled, { createGlobalStyle } from 'styled-components';
 
-export const GlobalStyle = createGlobalStyle`
+export const GlobalStyles = createGlobalStyle`
   body {
-    background-color: #adffb7;
+    background-color: #29ff44;
     color: #456;
     font-family: 'Work Sans', sans-serif;
     height: 100px;

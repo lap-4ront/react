@@ -4,6 +4,8 @@ import { Header } from './components/Header';
 import { Footer } from './components/Footer';
 import { ImageBox } from './components/ImageBox';
 
+const matrix = [0, 1, 2, 3];
+
 const App = () => {
   return (
     <>
@@ -12,7 +14,9 @@ const App = () => {
       <Footer />
       <Wrapper>
         <ImageContainer>
-          <ImageBox />
+          {matrix.map((x, index) => {
+            return <ImageBox key={index} x={x} />;
+          })}
         </ImageContainer>
       </Wrapper>
     </>

@@ -2,15 +2,15 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Image } from './styles';
 
-const ImageBox = ({ x }) => {
-  console.log(x);
+const ImageBox = ({ x, y }) => {
   return (
-    <Image />
+    <Image $initialX={x} $initialY={y} />
   );
 };
 
 ImageBox.propTypes = {
-  x: PropTypes.number
+  x: PropTypes.number,
+  y: PropTypes.number,
 };
 
 export { ImageBox };

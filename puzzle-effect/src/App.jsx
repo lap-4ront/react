@@ -4,7 +4,14 @@ import { Header } from './components/Header';
 import { Footer } from './components/Footer';
 import { ImageBox } from './components/ImageBox';
 
-const matrix = [0, 1, 2, 3];
+const matrix = [
+  [0, 0], [1, 0], [2, 0], [3, 0],
+  [0, 1], [1, 1], [2, 1], [3, 1],
+  [0, 2], [1, 2], [2, 2], [3, 2],
+  [0, 3], [1, 3], [2, 3], [3, 3],
+  [0, 4], [1, 4], [2, 4], [3, 4],
+  [0, 5], [1, 5], [2, 5], [3, 5],
+];
 
 const App = () => {
   return (
@@ -14,8 +21,8 @@ const App = () => {
       <Footer />
       <Wrapper>
         <ImageContainer>
-          {matrix.map((x, index) => {
-            return <ImageBox key={index} x={x} />;
+          {matrix.map(([x, y], index) => {
+            return <ImageBox key={index} x={x} y={y} />;
           })}
         </ImageContainer>
       </Wrapper>

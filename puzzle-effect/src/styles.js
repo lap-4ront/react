@@ -10,6 +10,16 @@ export const Marginals = css`
 `;
 
 export const GlobalStyles = createGlobalStyle`
+  @keyframes glow {
+    0% {
+      box-shadow: 0 0 0px rgb(142, 195, 215);
+    }
+
+    100% {
+      box-shadow: 0 10px 100px rgb(142, 195, 215);
+    }
+  }
+
   body {
     background-color: #09971b;
     color: #7fb9f3;
@@ -24,7 +34,13 @@ export const GlobalStyles = createGlobalStyle`
   }
 `;
 
-export const ImageContainer = styled.div`
+export const ImageContainer = styled.div.attrs(({ $isTogether }) => {
+  return {
+    style: {
+      animation: $isTogether ? 'glow 3s infinite alternate' : 'none',
+    },
+  };
+})`
   display: flex;
   flex-wrap: wrap;
   position: relative;
@@ -32,7 +48,13 @@ export const ImageContainer = styled.div`
   width: 400px;
 `;
 
-export const Wrapper = styled.section`
+export const Wrapper = styled.section.attrs(({ $color }) => {
+  return {
+    style: {
+      backgroundColor: `hsl(${$color}, 89%, 31%)`,
+    },
+  };
+})`
   align-items: center;
   display: flex;
   justify-content: center;

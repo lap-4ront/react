@@ -24,7 +24,7 @@ export const GlobalStyles = createGlobalStyle`
     background-color: #09971b;
     color: #7fb9f3;
     font-family: 'Work Sans', sans-serif;
-    height: 100px;
+    height: 100vh;
     margin: 0;
     overflow: hidden;
     padding: 0;

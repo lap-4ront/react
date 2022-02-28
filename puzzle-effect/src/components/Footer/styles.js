@@ -15,6 +15,15 @@ export const H2 = styled.h2`
   margin: 0;
   text-align: center;
   padding: 15px;
+
+  @media (max-width: 900px) {
+    font-size: 36px;
+  }
+
+  @media (max-width: 700px) {
+    font-size: 24px;
+    padding: 0;
+  }
 `;
 
 export const H2Middle = styled(H2)`

@@ -62,7 +62,15 @@ export const Wrapper = styled.section.attrs(({ $color }) => {
   width: 100vw;
 `;
 
+export const AbsoluteCenter = css`
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+`;
+
 export const Button = styled.button`
+  ${AbsoluteCenter}
   background: none;
   border: 2px solid #efefef;
   border-radius: 50%;
@@ -71,13 +79,9 @@ export const Button = styled.button`
   font-family: 'Work Sans', sans-serif;
   font-size: 34px;
   font-weight: 600;
-  left: 50%;
   line-height: 1;
   padding: 35px;
-  position: absolute;
   text-transform: uppercase;
-  top: 50%;
-  transform: translate(-50%, -50%);
   width: 300px;
   z-index: 1;
 

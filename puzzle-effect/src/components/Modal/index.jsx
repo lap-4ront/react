@@ -1,13 +1,20 @@
 import React from 'react';
-import { Modal, BG } from './styles';
+import PropTypes from 'prop-types';
+import { Modal, BG, Close } from './styles';
 
-const ModalComponent = () => {
+const ModalComponent = ({ toggleModal }) => {
   return (
     <>
-      <BG />
-      <Modal />
+      <Modal>
+        <Close onClick={toggleModal} />
+      </Modal>
+      <BG onClick={toggleModal} />
     </>
   );
 };
 
-export { ModalComponent };
+ModalComponent.propTypes = {
+  toggleModal: PropTypes.func
+};
+
+export { ModalComponent as Modal };

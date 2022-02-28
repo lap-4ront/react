@@ -3,7 +3,7 @@ import { GlobalStyles, ImageContainer, Wrapper, Button } from './styles';
 import { Header } from './components/Header';
 import { Footer } from './components/Footer';
 import { ImageBox } from './components/ImageBox';
-import { ModalComponent } from './components/Modal';
+import { Modal } from './components/Modal';
 
 const matrix = [
   [0, 0], [1, 0], [2, 0], [3, 0],
@@ -48,7 +48,7 @@ const App = () => {
     <>
       <GlobalStyles />
       {
-        showModal && <ModalComponent />
+        showModal && <Modal toggleModal={toggleModal} />
       }
       <Header />
       <Footer />

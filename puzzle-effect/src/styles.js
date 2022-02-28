@@ -61,3 +61,28 @@ export const Wrapper = styled.section.attrs(({ $color }) => {
   height: 100vh;
   width: 100vw;
 `;
+
+export const Button = styled.button`
+  background: none;
+  border: 2px solid #efefef;
+  border-radius: 50%;
+  color: #efefef;
+  cursor: pointer;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 34px;
+  font-weight: 600;
+  left: 50%;
+  line-height: 1;
+  padding: 35px;
+  position: absolute;
+  text-transform: uppercase;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  z-index: 1;
+
+  @media (max-width: 700px) {
+    font-size: 24px;
+    width: 220px;
+  }
+`;

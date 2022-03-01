@@ -4,6 +4,7 @@ import { Header } from './components/Header';
 import { Footer } from './components/Footer';
 import { ImageBox } from './components/ImageBox';
 import { Modal } from './components/Modal';
+import { ModalInner } from './components/ModalInner';
 
 const matrix = [
   [0, 0], [1, 0], [2, 0], [3, 0],
@@ -48,7 +49,9 @@ const App = () => {
     <>
       <GlobalStyles />
       {
-        showModal && <Modal toggleModal={toggleModal} />
+        showModal && <Modal toggleModal={toggleModal}>
+          <ModalInner />
+        </Modal>
       }
       <Header />
       <Footer />

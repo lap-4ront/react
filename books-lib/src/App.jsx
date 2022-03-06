@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
-
 import { BooksContainer } from './components/BooksContainer';
 import { Header } from './components/Header';
 import { GlobalStyle } from './styles';
+import { DetailPanel } from './components/DetailPanel';
 
 const App = () => {
   const [books, setBooks] = useState([]);
@@ -27,6 +27,9 @@ const App = () => {
       <GlobalStyle />
       <Header />
       <BooksContainer books={books} pickBook={pickBook} />
+      {
+        selectedBook && <DetailPanel book={selectedBook} />
+      }
     </>
   );
 };

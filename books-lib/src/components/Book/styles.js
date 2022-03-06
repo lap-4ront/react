@@ -1,7 +1,9 @@
 import styled from 'styled-components';
 
 export const Container = styled.figure`
-  cursor: pointer;
+  cursor: ${({$isLarge}) => {
+    return $isLarge ? 'default' : 'pointer';
+  }};
   margin: 0;
 `;
 
@@ -15,9 +17,17 @@ export const Cover = styled.img`
 `;
 
 export const Title = styled.h3`
-  font-size: 28px;
+  font-size: ${({$isLarge}) => {
+    return $isLarge ? '48px' : '28px';
+  }};
   line-height: 1.3;
   margin: 0 0 10px 0;
+
+  @media (max-width: 800px) {
+    font-size: ${({$isLarge}) => {
+      return $isLarge ? '32px' : '22px';
+    }};
+  }
 `;
 
 export const Author = styled.h4`

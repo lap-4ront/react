@@ -2,9 +2,9 @@ import React from 'react';
 import { Container, H2, BookList } from './styles';
 import { Book } from './../Book';
 
-const BooksContainer = ({ books, pickBook }) => {
+const BooksContainer = ({ books, pickBook, isPanelOpen }) => {
   return (
-    <Container>
+    <Container $isPanelOpen={isPanelOpen}>
       <H2>All books</H2>
       <BookList>
         {

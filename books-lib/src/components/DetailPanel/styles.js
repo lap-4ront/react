@@ -8,7 +8,10 @@ export const Panel = styled.article`
   overflow-y: scroll;
   padding: 40px 120px 60px 40px;
   position: fixed;
-  right: 0;
+  right: ${({$state}) => {
+    return $state === 'entering' || $state === 'entered' ? 0 : '-600px';
+  }};
+  transition: 300ms;
   width: 600px;
   z-index: 2;
 
@@ -18,7 +21,9 @@ export const Panel = styled.article`
 
   @media (max-width: 800px) {
     border-left: none;
-    bottom: 0;
+    bottom: ${({$state}) => {
+      return $state === 'entering' || $state === 'entered' ? 0 : '-100vh';
+    }};
     height: calc(100vh - 75px);
     padding: 40px 85px 20px 20px;
     right: unset;
@@ -72,7 +77,9 @@ export const CloseWrapper = styled.div`
   border: 2px solid #000;
   border-radius: 30px;
   cursor: pointer;
-  display: flex;
+  display: ${({$state}) => {
+    return $state === 'entered' ? 'flex' : 'none';
+  }};
   height: 40px;
   justify-content: center;
   overflow: hidden;
@@ -96,6 +103,14 @@ export const BG = styled.div`
   height: 100vh;
   position: fixed;
   top: 0;
+  transition: 300ms;
   width: 100vw;
   z-index: 1;
+
+  opacity: ${({$state}) => {
+    return $state === 'entering' || $state === 'entered' ? 1 : 0;
+  }};
+  pointer-events: ${({$state}) => {
+    return $state === 'exited' ? 'none' : 'auto';
+  }};
 `;

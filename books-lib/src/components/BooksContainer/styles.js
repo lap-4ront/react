@@ -4,7 +4,7 @@ export const Container = styled.div`
   background-color: #a7e1f8;
   padding: 160px 40px;
   overflow: ${({$isPanelOpen}) => {
-    return $isPanelOpen ? 'hidden' : 'scroll';
+    return $isPanelOpen ? 'hidden' : 'auto';
   }};
   position: ${({$isPanelOpen}) => {
     return $isPanelOpen ? 'fixed' : 'unset';

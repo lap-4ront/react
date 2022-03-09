@@ -9,6 +9,9 @@ export const Container = styled.div`
   position: ${({$isPanelOpen}) => {
     return $isPanelOpen ? 'fixed' : 'unset';
   }};
+  top: ${({$isPanelOpen, $top}) => {
+    return $isPanelOpen ? `-${$top}px` : 0;
+  }};
 
   @media (max-width: 800px) {
     padding: 114px 20px;

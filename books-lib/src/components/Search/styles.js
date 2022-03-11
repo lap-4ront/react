@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import {Pill} from '../../styles';
+import {ReactComponent as Magnifier} from './../../assets/search.svg';
 
 export const SearchContainer = styled(Pill)`
   height: 35px;
@@ -18,4 +19,9 @@ export const Input = styled.input`
   &:focus-visible {
     outline: none;
   }
+`;
+
+export const Icon = styled(Magnifier)`
+  cursor: pointer;
+  width: 20px;
 `;

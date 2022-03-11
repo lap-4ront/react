@@ -4,7 +4,25 @@ import {ReactComponent as Magnifier} from './../../assets/search.svg';
 
 export const SearchContainer = styled(Pill)`
   height: 35px;
-  width: 420px;
+  width: ${({$showOnDesktop}) => {
+    return $showOnDesktop ? '420px' : '35px';
+  }};
+  transition: 0.3s;
+
+  @media (max-width: 800px) {
+    width: 85%;
+  }
+
+  input,
+  button {
+    display: ${({$showOnDesktop}) => {
+      return $showOnDesktop ? 'block' : 'none';
+    }};
+
+    @media (max-width: 800px) {
+      display: block;
+    }
+  }
 `;
 
 export const Input = styled.input`
@@ -24,4 +42,20 @@ export const Input = styled.input`
 export const Icon = styled(Magnifier)`
   cursor: pointer;
   width: 20px;
+`;
+
+export const Wrapper = styled.div`
+  @media (max-width: 800px) {
+    align-items: center;
+    background-color: #ffbccc;
+    border-top: 2px solid #000;
+    bottom: 0;
+    display: flex;
+    height: 64px;
+    justify-content: center;
+    left: 0;
+    position: fixed;
+    width: 100vw;
+    z-index: 1;
+  }
 `;

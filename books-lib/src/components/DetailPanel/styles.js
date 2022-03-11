@@ -29,6 +29,7 @@ export const Panel = styled.article`
     padding: 40px 85px 20px 20px;
     right: unset;
     width: 100vw;
+    z-index: 3;
   }
 `;
 

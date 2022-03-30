@@ -21,6 +21,7 @@ export const SearchContainer = styled(Pill)`
 
     @media (max-width: 800px) {
       display: block;
+      min-width: 24px;
     }
   }
 `;

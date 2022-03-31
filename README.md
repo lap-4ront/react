@@ -7,5 +7,6 @@
 * ### [zesty-gallery](zesty-gallery)
 * ### [puzzle-effect](puzzle-effect)
 * ### [books-lib](books-lib)
+* ### [tic-tac-toe](tic-tac-toe)
 
 [Back &#8679;](#projects)

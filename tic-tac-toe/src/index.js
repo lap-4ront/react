@@ -1,29 +1,31 @@
-import React, { StrictMode } from "react";
+import React, { Component, StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import "./index.css";
 
-class Square extends React.Component {
-  render() {
-    return (
-      <button className="square" onClick={() => this.props.onClick()}>
-        {this.props.value}
-      </button>
-    );
-  }
+function Square(props) {
+  return (
+    <button className="square" onClick={props.onClick}>
+      {props.value}
+    </button>
+  );
 }
 
-class Board extends React.Component {
+class Board extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      squares: Array(9).fill(null)
+      squares: Array(9).fill(null),
+      xIsNext: true
     };
   }
 
   handleClick = (i) => {
     const squares = this.state.squares.slice();
-    squares[i] = "X";
-    this.setState({ squares });
+    squares[i] = this.state.xIsNext ? "X" : "O";
+    this.setState({
+      squares,
+      xIsNext: !this.state.xIsNext
+    });
   };
 
   renderSquare(i) {
@@ -36,7 +38,7 @@ class Board extends React.Component {
   }
 
   render() {
-    const status = "Next player: X";
+    const status = "Next player: " + (this.state.xIsNext ? "X" : "O");
 
     return (
       <div>
@@ -61,7 +63,7 @@ class Board extends React.Component {
   }
 }
 
-class Game extends React.Component {
+class Game extends Component {
   render() {
     return (
       <div className="game">

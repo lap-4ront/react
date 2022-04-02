@@ -9,8 +9,6 @@
 * ### [books-lib](books-lib)
 * ### [tic-tac-toe](tic-tac-toe)
 
-# A website with "puzzle" hover effect plus effect hooks alongside state.
-
 ## Getting Started
 
 Clone the repo:
@@ -19,7 +17,7 @@ Clone the repo:
 
 Go to folder you are interested in:
 
-cd react/[selected project](#projects)
+cd react/[selected project](#projects)  (favorite-animal | product-table | zesty-gallery | etc...)
 
 Install dependencies:
 

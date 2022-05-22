@@ -8,6 +8,7 @@
 * ### [puzzle-effect](puzzle-effect)
 * ### [books-lib](books-lib)
 * ### [tic-tac-toe](tic-tac-toe)
+* ### [search-filter](search-filter)
 
 ## Getting Started
 

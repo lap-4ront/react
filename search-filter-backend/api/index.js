@@ -17,7 +17,7 @@ app.get("/", (req, res) => {
     );
   };
 
-  res.json(search(Users).splice(0, 10));
+  q ? res.json(search(Users).slice(0, 10)) : res.json(Users.slice(0, 10));
 });
 
 app.listen(5000, console.log("Server is running..."));

@@ -4,39 +4,57 @@
 
 * ### [favorite-animal](favorite-animal)
 
-![favorite-animal preview](ASSETS/PROJECT-THUMBNAILS/favorite-animal/thumb.png)
+<a href="favorite-animal">
+  <img src="ASSETS/PROJECT-THUMBNAILS/favorite-animal/thumb.png" alt="favorite-animal preview"/>
+</a>
 
 * ### [product-table](product-table)
 
-![product-table preview](ASSETS/PROJECT-THUMBNAILS/product-table/thumb.png)
+<a href="product-table">
+  <img src="ASSETS/PROJECT-THUMBNAILS/product-table/thumb.png" alt="product-table preview"/>
+</a>
 
 * ### [zesty-gallery](zesty-gallery)
 
-![zesty-gallery preview](ASSETS/PROJECT-THUMBNAILS/zesty-gallery/thumb.png)
+<a href="zesty-gallery">
+  <img src="ASSETS/PROJECT-THUMBNAILS/zesty-gallery/thumb.png" alt="zesty-gallery preview"/>
+</a>
 
 * ### [puzzle-effect](puzzle-effect)
 
-![puzzle-effect preview](ASSETS/PROJECT-THUMBNAILS/puzzle-effect/thumb.png)
+<a href="puzzle-effect">
+  <img src="ASSETS/PROJECT-THUMBNAILS/puzzle-effect/thumb.png" alt="puzzle-effect preview"/>
+</a>
 
 * ### [books-lib](books-lib)
 
-![books-lib preview](ASSETS/PROJECT-THUMBNAILS/books-lib/thumb.png)
+<a href="books-lib">
+  <img src="ASSETS/PROJECT-THUMBNAILS/books-lib/thumb.png" alt="books-lib preview"/>
+</a>
 
 * ### [tic-tac-toe](tic-tac-toe)
 
-![tic-tac-toe preview](ASSETS/PROJECT-THUMBNAILS/tic-tac-toe/thumb.png)
+<a href="tic-tac-toe">
+  <img src="ASSETS/PROJECT-THUMBNAILS/tic-tac-toe/thumb.png" alt="tic-tac-toe preview"/>
+</a>
 
 * ### [search-filter](search-filter)
 
-![search-filter preview](ASSETS/PROJECT-THUMBNAILS/search-filter/thumb.png)
+<a href="search-filter">
+  <img src="ASSETS/PROJECT-THUMBNAILS/search-filter/thumb.png" alt="search-filter preview"/>
+</a>
 
 * ### [search-filter-backend](search-filter-backend)
 
-![search-filter-backend preview](ASSETS/PROJECT-THUMBNAILS/search-filter-backend/thumb.png)
+<a href="search-filter-backend">
+  <img src="ASSETS/PROJECT-THUMBNAILS/search-filter-backend/thumb.png" alt="search-filter-backend preview"/>
+</a>
 
 * ### [random-card](random-card)
 
-![random-card preview](ASSETS/PROJECT-THUMBNAILS/random-card/thumb.png)
+<a href="random-card">
+  <img src="ASSETS/PROJECT-THUMBNAILS/random-card/thumb.png" alt="random-card preview"/>
+</a>
 
 ## Getting Started
 

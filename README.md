@@ -3,17 +3,40 @@
 ## **Projects:**
 
 * ### [favorite-animal](favorite-animal)
+
+![favorite-animal preview](ASSETS/PROJECT-THUMBNAILS/favorite-animal/thumb.png)
+
 * ### [product-table](product-table)
+
+![product-table preview](ASSETS/PROJECT-THUMBNAILS/product-table/thumb.png)
+
 * ### [zesty-gallery](zesty-gallery)
+
+![zesty-gallery preview](ASSETS/PROJECT-THUMBNAILS/zesty-gallery/thumb.png)
+
 * ### [puzzle-effect](puzzle-effect)
+
+![puzzle-effect preview](ASSETS/PROJECT-THUMBNAILS/puzzle-effect/thumb.png)
+
 * ### [books-lib](books-lib)
+
+![books-lib preview](ASSETS/PROJECT-THUMBNAILS/books-lib/thumb.png)
+
 * ### [tic-tac-toe](tic-tac-toe)
+
+![tic-tac-toe preview](ASSETS/PROJECT-THUMBNAILS/tic-tac-toe/thumb.png)
+
 * ### [search-filter](search-filter)
+
+![search-filter preview](ASSETS/PROJECT-THUMBNAILS/search-filter/thumb.png)
+
 * ### [search-filter-backend](search-filter-backend)
+
+![search-filter-backend preview](ASSETS/PROJECT-THUMBNAILS/search-filter-backend/thumb.png)
+
 * ### [random-card](random-card)
 
-<img src="ASSETS/PROJECT-THUMBNAILS/random-card/thumb.png" alt="random-card preview" style="display: inline-block; height:100px; width: 100px" />
-
+![random-card preview](ASSETS/PROJECT-THUMBNAILS/random-card/thumb.png)
 
 ## Getting Started
 

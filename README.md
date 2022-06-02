@@ -10,6 +10,7 @@
 * ### [tic-tac-toe](tic-tac-toe)
 * ### [search-filter](search-filter)
 * ### [search-filter-backend](search-filter-backend)
+* ### [random-card](random-card)
 
 ## Getting Started
 

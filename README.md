@@ -12,6 +12,9 @@
 * ### [search-filter-backend](search-filter-backend)
 * ### [random-card](random-card)
 
+<img src="ASSETS/PROJECT-THUMBNAILS/random-card/thumb.png" alt="random-card preview" style="display: inline-block; height:100px; width: 100px" />
+
+
 ## Getting Started
 
 Clone the repo:

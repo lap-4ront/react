@@ -56,6 +56,12 @@
   <img src="ASSETS/PROJECT-THUMBNAILS/random-card/thumb.png" alt="random-card preview"/>
 </a>
 
+* ### [cinema-quiz](cinema-quiz)
+
+<a href="cinema-quiz">
+  <img src="ASSETS/PROJECT-THUMBNAILS/cinema-quiz/thumb.png" alt="cinema-quiz preview"/>
+</a>
+
 ## Getting Started
 
 Clone the repo:

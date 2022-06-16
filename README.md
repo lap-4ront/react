@@ -62,6 +62,12 @@
   <img src="ASSETS/PROJECT-THUMBNAILS/cinema-quiz/thumb.png" alt="cinema-quiz preview"/>
 </a>
 
+* ### [url-short](url-short)
+
+<a href="url-short">
+  <img src="ASSETS/PROJECT-THUMBNAILS/url-short/thumb.png" alt="url-short preview"/>
+</a>
+
 ## Getting Started
 
 Clone the repo:

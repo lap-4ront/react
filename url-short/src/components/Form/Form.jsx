@@ -1,9 +1,12 @@
 import { Button } from "components/Button/Button";
 import { useForm } from "react-hook-form";
+import { useDispatch } from "react-redux";
+import { createShortLink } from "store/slice/linkSlice";
 
 import classes from "./Form.module.scss";
 
 const Form = () => {
+  const dispatch = useDispatch();
   const {
     register,
     formState: { errors },
@@ -13,8 +16,8 @@ const Form = () => {
     mode: "onSubmit"
   });
 
-  const onSubmit = (data) => {
-    console.log(data);
+  const onSubmit = ({ Url }) => {
+    dispatch(createShortLink(Url));
   };
 
   return (

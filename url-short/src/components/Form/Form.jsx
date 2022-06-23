@@ -1,11 +1,12 @@
 import { Button } from "components/Button/Button";
 import { useForm } from "react-hook-form";
-import { useDispatch } from "react-redux";
-import { createShortLink } from "store/slice/linkSlice";
+import { useDispatch, useSelector } from "react-redux";
+import { createShortLink, selectLoading } from "store/slice/linkSlice";
 
 import classes from "./Form.module.scss";
 
 const Form = () => {
+  const loading = useSelector(selectLoading);
   const dispatch = useDispatch();
   const {
     register,
@@ -18,6 +19,7 @@ const Form = () => {
 
   const onSubmit = ({ Url }) => {
     dispatch(createShortLink(Url));
+    reset();
   };
 
   return (
@@ -40,8 +42,21 @@ const Form = () => {
                 message: "Please, enter a valid url address"
               }
             })}
+            style={{
+              outlineColor: errors.Url
+                ? "var(--secondary-300)"
+                : "currentcolor",
+              outlineWidth: errors.Url ? "5px" : "1px",
+              outlineStyle: "solid"
+            }}
+            disabled={loading === "loading"}
           />
-          <Button variant="square" type="submit" size="medium">
+          <Button
+            variant="square"
+            type="submit"
+            size="medium"
+            disabled={loading === "loading"}
+          >
             Shorten it!
           </Button>
           {errors.Url && (

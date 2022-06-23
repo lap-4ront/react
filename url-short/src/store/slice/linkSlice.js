@@ -5,8 +5,7 @@ export const createShortLink = createAsyncThunk(
   "links/createShortLink",
   async (url) => {
     const response = await fetch(API_BASE_URL + url, { method: "POST" });
-    const result = await response.json();
-    return result;
+    return await response.json();
   }
 );
 
@@ -38,5 +37,8 @@ const linkSlice = createSlice({
     }
   }
 });
+
+export const selectLoading = (state) => state.links["loading"];
+export const selectLinks = (state) => state.links["items"];
 
 export default linkSlice.reducer;

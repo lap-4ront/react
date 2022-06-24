@@ -39,6 +39,6 @@ const linkSlice = createSlice({
 });
 
 export const selectLoading = (state) => state.links["loading"];
-export const selectLinks = (state) => state.links["items"];
+export const selectLinks = (state) => state.links.items;
 
 export default linkSlice.reducer;

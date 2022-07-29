@@ -1,0 +1,28 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  align-items: center;
+  font-family: "Bitter", serif;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  border: none;
+  font-size: inherit;
+}
+
+p {
+  margin: 0;
+}

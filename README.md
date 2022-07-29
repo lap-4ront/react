@@ -68,6 +68,12 @@
   <img src="ASSETS/PROJECT-THUMBNAILS/url-short/thumb.png" alt="url-short preview" width="650" />
 </a>
 
+* ### [horizontal-tabs](horizontal-tabs)
+
+<a href="horizontal-tabs">
+  <img src="ASSETS/PROJECT-THUMBNAILS/horizontal-tabs/thumb.png" alt="Horizontal tabs preview" width="650" />
+</a>
+
 ## Getting Started
 
 Clone the repo:
